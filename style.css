@@ -4,18 +4,24 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding-bottom: 60px; /* Adjust based on the actual height of your footer */
 }
 
 nav {
     background-color: #333;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px; /* Adjust the width as needed */
+    height: 100%; /* Make the nav take the full height of the viewport */
 }
 
 nav a {
-    float: left;
-    color: #f2f2f2;
+    display: block; /* Make links stack vertically */
     text-align: center;
-    padding: 14px 16px;
+    color: #f2f2f2;
+    padding: 14px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -78,12 +84,28 @@ input[type="submit"]:hover {
     transform: scale(1.05);
 }
 
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.footer-menu {
+    margin-bottom: 20px;
+}
+
+.footer-menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-menu a:hover {
+    color: #cccccc;
 }
